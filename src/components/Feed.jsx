@@ -5,13 +5,16 @@ import { fetchFromAPI } from '../utils/fetchFromAPI';
 import { Sidebar, Videos } from './';
 
 const Feed = () => {
-    const [selectedCategory, setSelectedCategory] = useState('Scourby Audio Bible');
+    const [selectedCategory, setSelectedCategory] = useState(
+        'Scourby Audio Bible'
+    );
     const [videos, setVideos] = useState([]);
 
     useEffect(() => {
         fetchFromAPI(selectedCategory)
             .then((data) => {
                 setVideos(data.videos);
+                console.log(videos);
             })
             .catch((error) => console.log(error));
     }, [selectedCategory]);

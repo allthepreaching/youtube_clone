@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-// const BASE_URL = 'https://youtube-v31.p.rapidapi.com';
 const BASE_URL = 'https://test-api428.p.rapidapi.com/data';
 
 const options = {

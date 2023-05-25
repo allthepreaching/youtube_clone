@@ -3,6 +3,7 @@ import { Stack, Box } from '@mui/material';
 import { ProfileCard, VideoCard } from './';
 
 const Videos = ({ videos }) => {
+    console.log(videos);
     return (
         <>
             <Stack
